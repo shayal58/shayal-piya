@@ -1,54 +1,56 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.3 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+const img =document.getElementById("img")
+const imageDescription= document.querySelector(".imageDescription")
+const bod =document.querySelector('body');
+function developer() {
+    const develop = document.querySelector(".developer");
+    const skillset = ["UI & UX", "WEB", "APP", "GRAPHIC"];
+    let i = 0;
 
-window.addEventListener('DOMContentLoaded', event => {
-
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
+    function displaySkill() {
+        if (i < skillset.length) {
+           develop.innerHTML =`${skillset[i]}`
+          
+            i++;
+            setTimeout(displaySkill, 1000);  // Call the function recursively with a 5-second delay
         }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
+        else{
+            i = 0;
+            setTimeout(displaySkill, 1000); // Restart the skillset
         }
+    }
 
-    };
+    displaySkill();  // Start the recursive function
+}
 
-    // Shrink the navbar 
-    navbarShrink();
 
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 72,
-        });
-    };
-
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-
-});
+developer();
+function Description1(){
+    img.src ="ims.png"
+    imageDescription.innerHTML ='This is the inventory management system we created to check inventory';
+}
+function Description2(){
+    img.src ="finance.png"
+    imageDescription.innerHTML ='this is finance litracy which provide literacy on finance with help of quiz expense tracker etc';
+}
+function Description3(){
+    img.src ="portfolio.png"
+    imageDescription.innerHTML ='This is the protfolio that i have created';
+}
+function darkMode(){
+bod.style.backgroundColor ='#000000';
+bod.style.color ="#FFFFFF"
+}
+function WhiteMode(){
+    bod.style.backgroundColor ='#FFFFFF';
+    bod.style.color ="#000000";
+    }
+    
+    function downloadPDF(){
+        const link = document.createElement('a');
+        link.href = 'cv.pdf'; // Replace with your file URL
+        link.download = 'cv.pdf'; // Optional: Specify the download filename
+        link.click();
+    }
+    function contactMe(){
+        
+    }
