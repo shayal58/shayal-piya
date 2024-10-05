@@ -29,7 +29,7 @@ function Description1(){
     imageDescription.innerHTML ='This is the inventory management system we created to check inventory';
 }
 function Description2(){
-    img.src ="assets/finance.png"
+    img.src ="finance.png"
     imageDescription.innerHTML ='this is finance litracy which provide literacy on finance with help of quiz expense tracker etc';
 }
 function Description3(){
