@@ -25,15 +25,15 @@ function developer() {
 
 developer();
 function Description1(){
-    img.src ="assets/ims.png"
+    img.src ="./assets/ims.png"
     imageDescription.innerHTML ='This is the inventory management system we created to check inventory';
 }
 function Description2(){
-    img.src ="assets/finance.png"
+    img.src ="./assets/finance.png"
     imageDescription.innerHTML ='this is finance litracy which provide literacy on finance with help of quiz expense tracker etc';
 }
 function Description3(){
-    img.src ="assets/portfolio.png"
+    img.src ="./assets/portfolio.png"
     imageDescription.innerHTML ='This is the protfolio that i have created';
 }
 function darkMode(){
