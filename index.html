@@ -92,23 +92,44 @@
         <button class="bg-slate-300 px-3 rounded ml-8" onclick="Description2()">2 </button>
         <button class="bg-slate-300 px-3 rounded ml-8"  onclick="Description3()" >3 </button>
      </div>  
-<div id ='Contact'>
+<div class="Contact" id="Contact">
     <h2 class="font-bold flex justify-center mt-48 text-4xl">Lets Discuss <p class="text-orange-500"> Your Project</p> </h2>
     <p class="flex justify-center mt-8">Lets make something new, different and more meaningful or make thing more visual or conceptual</p>
-    <div class="flex ">
-        <div class="h-1/2 w-1/2 mt-12 ml-20 text-black">
-<div class="flex bg-slate-200 py-2 w-96 h-32 rounded"><div><img src="./assets/phone.svg" class=" h-12 w-12 fill-orange-500 ml-2"></div><div class="ml-32"><span>call me</span> <br>+9811818835 </div> </div>
-<div class="flex mt-12 bg-slate-200 py-2 w-96 h-32 rounded"><div><img src="./assets/email.svg" class=" h-12 w-12 fill-orange-500 ml-2"></div><div class="ml-32"><span>Email me</span> <br>shayalpiya39@gmail.com </div>  </div>
-<div class="flex mt-12 bg-slate-200 py-2 w-96 h-32 rounded"><div><img src="./assets/adress.png" class=" h-12 w-12 bg-slate-200 ml-2"></div><div class="ml-32"><span>Adress </span> <br>chitwan,bharatpur </div>  </div>
+    <div class="flex flex-col md:flex-row md:justify-between p-4">
+        <div class="w-full md:w-1/2 text-black mt-12">
+            <div class="bg-slate-200 py-4 w-full max-w-md rounded-lg flex items-center mb-6">
+                <img src="./assets/phone.svg" class="h-12 w-12 fill-orange-500 ml-4" alt="Phone Icon">
+                <div class="ml-4">
+                    <span class="font-semibold">Call Me</span><br>
+                    <span class="text-sm">+9811818835</span>
+                </div>
+            </div>
+            <div class="bg-slate-200 py-4 w-full max-w-md rounded-lg flex items-center mb-6">
+                <img src="./assets/email.svg" class="h-12 w-12 fill-orange-500 ml-4" alt="Email Icon">
+                <div class="ml-4">
+                    <span class="font-semibold">Email Me</span><br>
+                    <span class="text-sm">shayalpiya39@gmail.com</span>
+                </div>
+            </div>
+            <div class="bg-slate-200 py-4 w-full max-w-md rounded-lg flex items-center">
+                <img src="./assets/adress.png" class="h-12 w-12 bg-slate-200 ml-4" alt="Address Icon">
+                <div class="ml-4">
+                    <span class="font-semibold">Address</span><br>
+                    <span class="text-sm">Chitwan, Bharatpur</span>
+                </div>
+            </div>
         </div>
-        <form action="https://api.web3forms.com/submit" method="POST" class="mt-6 md:mt-0 md:w-full max-w-md">
-            <input type="hidden" name="access_key" value="f5e0cfd7-7688-4e8d-b64d-14e5ec528f6d">
-            <input type="text" name="name" placeholder="Name" class="w-full mb-4 px- py-2 border-2 border-slate-200 rounded" required>
-            <input type="email" name="email" placeholder="Email" class="w-full mb-4 px-4 py-2 border-2 border-slate-200 rounded" required><br>
-            <textarea name="message" placeholder="Message" class="w-full px-4 py-4 border-2 border-slate-200 bg-slate-200 rounded resize-none" rows="4" required></textarea><br>
-            <button type="submit" class="w-full rounded bg-orange-400 px-4 py-2 text-white hover:bg-orange-500 transition-colors duration-200">Submit Form</button>
-        </form>
-</div>
+        <div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="mt-6 md:mt--8 w-full md:w-2/3 space-y-4">
+                <input type="hidden" name="access_key" value="f5e0cfd7-7688-4e8d-b64d-14e5ec528f6d">
+                <input type="text" name="name" placeholder="Name" class="w-full px-4 py-2 border-2 border-slate-200 rounded" required>
+                <input type="email" name="email" placeholder="Email" class="w-full px-4 py-2 border-2 border-slate-200 rounded" required>
+                <textarea name="message" placeholder="Message" class="w-full px-4 py-4 border-2 border-slate-200 bg-slate-200 rounded resize-none" rows="4" required></textarea>
+                <button type="submit" class="w-full rounded bg-orange-400 px-4 py-2 text-white hover:bg-orange-500 transition-colors duration-200">Submit Form</button>
+            </form>
+    </div>
+    </div>
+    
     </div>
   
 </body>
