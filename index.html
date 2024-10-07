@@ -101,16 +101,13 @@
 <div class="flex mt-12 bg-slate-200 py-2 w-96 h-32 rounded"><div><img src="./assets/email.svg" class=" h-12 w-12 fill-orange-500 ml-2"></div><div class="ml-32"><span>Email me</span> <br>shayalpiya39@gmail.com </div>  </div>
 <div class="flex mt-12 bg-slate-200 py-2 w-96 h-32 rounded"><div><img src="./assets/adress.png" class=" h-12 w-12 bg-slate-200 ml-2"></div><div class="ml-32"><span>Adress </span> <br>chitwan,bharatpur </div>  </div>
         </div>
-    <form action="https://api.web3forms.com/submit" method="POST" class="mt-12 mr-32">
-
-        <input type="hidden" name="access_key" value="f5e0cfd7-7688-4e8d-b64d-14e5ec528f6d">
-    
-        <input type="text" name="name" placeholder="name" class="px-20 py-2 mb-8 border-2 border-slate-200" required>
-        <input type="email" name="email" placeholder="email" class="px-16 ml-2 py-2 border-2 border-slate-200"><br>
-        <textarea name="message"  placeholder="Message" class="px-60 py-32 border-2 bg-slate-200 flex items-center"></textarea><br>
-        <button type="submit" class="rounded bg-orange-400 ml-64 px-2 py-2" >Submit Form</button>
-    
-    </form>
+        <form action="https://api.web3forms.com/submit" method="POST" class="mt-6 md:mt-0 md:w-full max-w-md">
+            <input type="hidden" name="access_key" value="f5e0cfd7-7688-4e8d-b64d-14e5ec528f6d">
+            <input type="text" name="name" placeholder="Name" class="w-full mb-4 px- py-2 border-2 border-slate-200 rounded" required>
+            <input type="email" name="email" placeholder="Email" class="w-full mb-4 px-4 py-2 border-2 border-slate-200 rounded" required><br>
+            <textarea name="message" placeholder="Message" class="w-full px-4 py-4 border-2 border-slate-200 bg-slate-200 rounded resize-none" rows="4" required></textarea><br>
+            <button type="submit" class="w-full rounded bg-orange-400 px-4 py-2 text-white hover:bg-orange-500 transition-colors duration-200">Submit Form</button>
+        </form>
 </div>
     </div>
   
