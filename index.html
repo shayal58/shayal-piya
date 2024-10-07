@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shayal piya </title>
     <script src="https:\\cdn.tailwindcss.com"></script>
-    <script src="style.css"></script>
+    <!-- <script src="style.css"></script> -->
         <link rel="icon" href="assets/Group2.png" type="image/x-icon">
 
 </head>
@@ -93,8 +93,32 @@
         <button class="bg-slate-300 px-3 rounded ml-8"  onclick="Description3()" >3 </button>
      </div>  
 <div>
+    <h2>Get in touch</h2>
+    <form onsubmit="emailSend();reset();return false;">
+        <input type="text" id="Name" placeholder="Name" class="mx-12" required>
+        <input type="number" id="phone" placeholder="Phone" required>
+        <input type="email" id ="email" placeholder="email" required>
+        <button type="submit" class="btn">submit</button>
+    </form>
     </div>
- 
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
+
+<script>
+    function emailSend() {
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "shayalpiya39@gmail.com",
+            Password : "A5036029CAB899C5188114229984A5292886",
+            To : 'spking2058@gmail.com',
+            From : "shayalpiya39@gmail.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+    </script>
  <script src="js/scripts.js"></script>
 </html>
