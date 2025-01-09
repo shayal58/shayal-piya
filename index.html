@@ -10,38 +10,38 @@
 
 </head>
 <body class="body font-serif ">
-    <nav class="flex justify-around font-serif mt-8">
+    <nav class="flex md:flex-row flex-col justify-around font-serif mt-8">
         <div class="text-2xl font-bold">Shayal</div>
-        <div class="">
-     <a href="#Home" class="nav ">Home</a>
-     <a href="#Aboutme" class="nav ml-8">About me</a>
-     <a href="#Services" class="nav ml-8">Services</a>
-     <a href="#Projects" class="nav ml-8">Projects</a>
-     <a href="#Contact" class="nav ml-8">Contact</a>
- <button class="nav ml-8 bg-orange-500 rounded py-2 px-4"onclick='downloadPDF()'>Download Cv</button>
- <button onclick="darkMode()" class="ml-8">darkMode</button>
- <button onclick="WhiteMode()"class='ml-8'>whiteMode</button>
+        <div class="flex md:flex-row flex-col">
+     <a href="#Home" class="nav md:ml-0 ml-2  ">Home</a>
+     <a href="#Aboutme" class="nav md:ml-8 ml-2">About me</a>
+     <a href="#Services" class="nav md:ml-8 ml-2">Services</a>
+     <a href="#Projects" class="nav md:ml-8 ml-2">Projects</a>
+     <a href="#Contact" class="nav md:ml-8 ml-2">Contact</a>
+ <button class="nav md:ml-8 ml-2 bg-orange-500 rounded md:py-2 md:px-4 px-0"onclick='downloadPDF()'>Download Cv</button>
+ <button onclick="darkMode()" class="md:ml-8 ml-2">darkMode</button>
+ <button onclick="WhiteMode()"class='md:ml-8 ml-2'>whiteMode</button>
 
 </div>
     </nav>
-    <div class="Home flex justify-around mt-20" id ='Home'>
-        <div><span class="text-3xl pt-32 font-bold">Hi i am </span><br>
+    <div class="Home flex md:flex-row flex-col justify-around mt-20" id ='Home'>
+        <div><span class="md:text-3xl text-xl mt-32 font-bold">Hi i am </span><br>
         <span class="text-4xl text-orange-500  mt-32">Shayal piya</span><br>
-    <span class="developer font-bold text-7xl">UI &UX</span><br>
+    <span class="developer font-bold md:text-7xl text-5xl">UI &UX</span><br>
 
-    <span class="ml-24 font-bold text-7xl">Designer</span><br>
-    <p class="mt-8" >Hi there! I'm a web developer passionate about creating user-friendly websites and applications.<br> Proficient in HTML, CSS, and JavaScript, I also work with frameworks like React.js. I focus on <br>building responsive designs and full-stack solutions using Node.js and MongoDB.</p>
+    <span class="ml-24 font-bold md:text-7xl text-5xl">Designer</span><br>
+    <p class="mt-8 md:text-x text-sm " >Hi there! I'm a web developer passionate about creating user-friendly websites and applications.<br> Proficient in HTML, CSS, and JavaScript, I also work with frameworks like React.js. I focus on <br>building responsive designs and full-stack solutions using Node.js and MongoDB.</p>
 </div>
-        <div><img src="assets/Group2.png" alt="" class="h-2/3/2 w-96"></div>
+        <div><img src="assets/Group2.png" alt="" class="md:h-2/3/2 h-96 w-96"></div>
     </div>
-    <div class="flex justify-end py-1.5 mt-12 bg-orange-500"><span class="mr-12 font-bold text-xl text-white"><marquee class="px-96">follow me on</marquee></span><a href="https://www.instagram.com/shayal.piya/"><img src="assets/Instagram - Negative.png" class="mr-6"></a><a href="https://www.facebook.com/shayal.piya.5"><img src="assets/Facebook - Negative (1).png" class="mr-6"></a><a href="https://x.com/"><img  src='assets/Twitter - Negative.png'class="mr-6"></a><a href="https://www.linkedin.com/in/shayal-piya-b6b2b1306/"> <img src="assets/Vector.png" class="mr-6"></a> </div>
+    <div class="flex justify-end py-1.5 mt-12 pt-3 bg-orange-500"><span class="mr-10 font-bold text-xl text-white"><marquee class="w-screen">follow me on</marquee></span><a href="https://www.instagram.com/shayal.piya/"><img src="assets/Instagram - Negative.png" class="mr-10"></a><a href="https://www.facebook.com/shayal.piya.5"><img src="assets/Facebook - Negative (1).png" class="mr-10"></a><a href="https://x.com/"><img  src='assets/Twitter - Negative.png'class="mr-10"></a><a href="https://www.linkedin.com/in/shayal-piya-b6b2b1306/"> <img src="assets/Vector.png" class="mr-10"></a> </div>
 
 
-    <div class="flex justify-between">
-        <div><img src="assets/Group2.png" alt="" class="h-2/3/2 w-96"></div>
+    <div class="flex  justify-between">
+        <div><img src="assets/Group2.png" alt="" class="h-2/3/2 w-96 md:block hidden"></div>
         <div class="Aboutme" id="Aboutme">
-            <h1 class=" mt-12 text-6xl">About me</h1>
-            <div class=" mt-12">Hi there! I'm a web developer passionate about creating user-friendly websites and applications.<br> Proficient in HTML, CSS, and JavaScript, I also work with frameworks like React.js. I focus on <br>building responsive designs and full-stack solutions using Node.js and MongoDB.</div>
+            <h1 class=" mt-12 text-5xl">About me</h1>
+            <div class=" md:mt-12 mt-4 md:text-xl text-lg">Hi there! I'm a web developer passionate about creating user-friendly websites and applications.<br> Proficient in HTML, CSS, and JavaScript, I also work with frameworks like React.js. I focus on <br>building responsive designs and full-stack solutions using Node.js and MongoDB.</div>
             <div class="label"></div>
             <label>UX</label>
       
@@ -93,7 +93,7 @@
         <button class="bg-slate-300 px-3 rounded ml-8"  onclick="Description3()" >3 </button>
      </div>  
 <div class="Contact" id="Contact">
-    <h2 class="font-bold flex justify-center mt-48 text-4xl">Lets Discuss <p class="text-orange-500"> Your Project</p> </h2>
+    <h2 class="font-bold flex justify-center mt-48 md:text-4xl text-3xl">Lets Discuss <p class="text-orange-500"> Your Project</p> </h2>
     <p class="flex justify-center mt-8">Lets make something new, different and more meaningful or make thing more visual or conceptual</p>
     <div class="flex flex-col md:flex-row md:justify-between p-4">
         <div class="w-full md:w-1/2 text-black mt-12">
